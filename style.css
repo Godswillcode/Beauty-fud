@@ -1,45 +1,84 @@
-
-/* Default */
+/*== Default ==*/
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 :root {
-    --primary: #c8a97e;
-    --secondary: #666666;
-  }
+  --primary: #c8a97e;
+  --secondary: #666666;
+}
 
+/*=== Header ===*/
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6) url("./assets/images/hero.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: overlay;
+}
 
-  /* === navbar ===*/
+/* === navbar ===*/
+.navbar {
+  background: transparent !important;
+  transition: all 0.5s;
+  border-bottom: 2px solid var(--secondary);
+}
+
+@media (max-width: 768px) {
   .navbar {
-      background: transparent !important;
-      transition: all 0.5s;
+    background: #000 !important;
+    text-align: center !important;
   }
 
- 
-  .navbar.myActive {
-      background: var(--primary) !important;
-      transition: all 0.5s;
+  .navbar-brand {
+    padding-left: 10px;
+}
+}
+
+.navbar-brand {
+    font-size: 25px !important;
+    font-size: 500 !important;
+    padding-left: 10px;
+}
+
+.navbar.myActive {
+  background: #000 !important;
+  transition: all 0.5s;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+}
+
+  @media(min-width: 769px) {
+    .nav-link::after {
+        content: "";
+        width: 0%;
+        height: 3px;
+        display: block;
+        background-color: var(--primary);
+        margin-top: 1px;
+        transition: all 0.3s;
+      }
+      
+      .nav-link:hover::after,
+      .nav-link.active::after {
+        width: 100%;
+        transition: all 0.3s;
+      }
   }
 
-  .nav-link {
-      color: #fff !important;
-  }
-
-
-  /* Hero */
-  .hero {
-      height: 100vh;
-      width: 100%;
-      background: rgba(0, 0, 0, 0.5) url('./assets/images/2.jpg') no-repeat;
-      background-size: cover;
-      background-position: center center;
-      background-blend-mode: overlay;
-      margin-top: -56px;
-  }
-
-
-
+@media(max-width: 768px) {
+    .nav-link:hover, .nav-link.active {
+        color: var(--primary) !important;
+    }
+}

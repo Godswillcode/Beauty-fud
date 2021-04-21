@@ -18,10 +18,11 @@
   </head>
   <body>
     <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container">
+    <header class="hero">
+      <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container-fluid-sm container-lg">
           <a class="navbar-brand text-white" href="#">Beauty Fud</a>
-          <button
+          <span
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
@@ -30,8 +31,20 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill="#fff"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </span>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
@@ -53,37 +66,36 @@
           </div>
         </div>
       </nav>
-
-    <!-- Hero -->
-    <div
-      class="hero d-flex justify-content-center align-items-center text-white text-center"
-    >
-      <div>
-        <h1>Welcome to Beauty Fud</h1>
-        <p>Welcome love you</p>
+      <div
+        class="h-100 d-flex justify-content-center align-items-center text-white text-center"
+      >
+        <div>
+          <h1>Welcome to Beauty Fud</h1>
+          <p>Welcome love you</p>
+        </div>
       </div>
-    </div>
+    </header>
+    <!-- Hero -->
 
     <div style="margin-top: 20em;"></div>
 
-   
     <!-- JavaScript Bundle with Popper bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
       crossorigin="anonymous"
     ></script>
-<!--  -->
+    <!-- change bg onscroll -->
     <script>
-        const header = document.querySelector(".navbar");
-        window.onscroll = function() {
-          var top = window.scrollY;
-          if (top >= 50) {
-            header.classList.add("myActive");
-          } else {
-            header.classList.remove("myActive");
-          }
-        };
-      </script>
+      const header = document.querySelector(".navbar");
+      window.onscroll = function () {
+        var top = window.scrollY;
+        if (top >= 100) {
+          header.classList.add("myActive");
+        } else {
+          header.classList.remove("myActive");
+        }
+      };
+    </script>
   </body>
 </html>
