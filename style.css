@@ -1,3 +1,6 @@
+/* == google font ==*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
 /*== Default ==*/
 
 * {
@@ -23,6 +26,31 @@
   background-blend-mode: overlay;
 }
 
+.hero-wrap h1 {
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+}
+
+.hero-wrap p {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.7px;
+}
+
+.hero-btn {
+  background: var(--primary) !important;
+  color: #fff !important;
+  font-weight: 500 !important;
+  font-size: 19px !important;
+}
+
+.hero-btn:hover {
+  background: transparent !important;
+  border: 1px solid var(--primary);
+  transition: all 0.3s;
+}
+
 /* === navbar ===*/
 .navbar {
   background: transparent !important;
@@ -30,21 +58,14 @@
   border-bottom: 2px solid var(--secondary);
 }
 
-@media (max-width: 768px) {
-  .navbar {
-    background: #000 !important;
-    text-align: center !important;
-  }
-
-  .navbar-brand {
-    padding-left: 10px;
-}
-}
-
 .navbar-brand {
-    font-size: 25px !important;
-    font-size: 500 !important;
-    padding-left: 10px;
+  font-size: 25px !important;
+  font-size: 500 !important;
+  padding-left: 10px;
+}
+
+.navbar-toggler {
+  cursor: pointer;
 }
 
 .navbar.myActive {
@@ -59,26 +80,46 @@
   letter-spacing: 0.8px;
 }
 
-  @media(min-width: 769px) {
-    .nav-link::after {
-        content: "";
-        width: 0%;
-        height: 3px;
-        display: block;
-        background-color: var(--primary);
-        margin-top: 1px;
-        transition: all 0.3s;
-      }
-      
-      .nav-link:hover::after,
-      .nav-link.active::after {
-        width: 100%;
-        transition: all 0.3s;
-      }
+/* === MEDIA QUERY === */
+@media (max-width: 768px) {
+  /* hero */
+  .hero-wrap h1 {
+    font-size: 37px;
   }
 
-@media(max-width: 768px) {
-    .nav-link:hover, .nav-link.active {
-        color: var(--primary) !important;
-    }
+  /* navbar */
+  .navbar {
+    background: #000 !important;
+    text-align: center !important;
+  }
+
+  .navbar-brand {
+    padding-left: 10px;
+  }
+
+  /* nav-link */
+  .nav-link:hover,
+  .nav-link.active {
+    color: var(--primary) !important;
+  }
+}
+
+/* MIN WIDTH */
+@media (min-width: 769px) {
+  /* nav-link */
+  .nav-link::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    display: block;
+    background-color: var(--primary);
+    margin-top: 1px;
+    transition: all 0.3s;
+  }
+
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    width: 100%;
+    transition: all 0.3s;
+  }
 }
