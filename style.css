@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
 /*== Default ==*/
-
 * {
   padding: 0;
   margin: 0;
@@ -13,6 +12,42 @@
 :root {
   --primary: #c8a97e;
   --secondary: #666666;
+}
+
+p {
+  color: var(--secondary);
+  text-align: justify;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+  color: var(--primary) !important;
+}
+
+/*== Banner ==*/
+.banner {
+  height: 50vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6) url("./assets/images/banner.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: overlay;
+}
+
+.banner .banner-link {
+  font-weight: 600;
+}
+
+.banner a {
+  color: var(--primary);
+}
+
+.banner a:hover {
+  color: inherit;
 }
 
 /*=== Header ===*/
@@ -38,17 +73,17 @@
   letter-spacing: 0.7px;
 }
 
-.hero-btn {
+.my-btn {
   background: var(--primary) !important;
   color: #fff !important;
   font-weight: 500 !important;
-  font-size: 19px !important;
 }
 
-.hero-btn:hover {
+.my-btn:hover {
   background: transparent !important;
   border: 1px solid var(--primary);
   transition: all 0.3s;
+  color: var(--primary) !important;
 }
 
 /* === navbar ===*/
@@ -79,6 +114,12 @@
   font-weight: 400;
   letter-spacing: 0.8px;
 }
+
+/* === ABOUT PAGE === */
+.about-box {
+  border: 2px solid var(--primary);
+}
+
 
 /* === MEDIA QUERY === */
 @media (max-width: 768px) {
