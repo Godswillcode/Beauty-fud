@@ -121,6 +121,97 @@ a:hover {
 }
 
 
+
+/* === Expert PAGE === */
+.team-area {
+  padding-top: 0% !important;
+}
+
+.single-team {
+  margin-bottom: 10px;
+}
+
+.single-team:hover{
+  background: #fff;
+  box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.single-team:hover .social {
+  cursor: pointer;
+  opacity: 1;
+  transform: rotateY(0deg) scale(1, 1);
+}
+
+.img-area {
+  overflow: hidden;
+  position: relative !important;
+}
+
+.img-area img {
+  width: 100%;
+}
+
+.img-area:hover img {
+  transform: scale(1.2);
+}
+
+.img-area img {
+  transition: all 0.4s ease 0s;
+}
+
+.img-area .social {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute !important;
+  text-align: center !important;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: 0.5s;
+  transform: rotateY(180deg) scale(0.5, 0.5);
+}
+.img-area .social ul {
+  text-align: center !important;
+  position: relative !important;
+  top: 175px;
+  display: flex;
+  justify-content: center;
+}
+.img-area .social ul li a {
+  border: 1px solid #fff;
+  color: #fff;
+  display: block !important;
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center !important;
+}
+.img-area .social ul li{
+  padding-left: 5px !important;
+}
+.img-area .social ul li a:hover {
+  color: var(--primary) !important;
+  border: 1px solid var(--primary);
+}
+.img-text {
+  padding: 20px;
+}
+.img-text h4 {
+  font-size: 19px;
+  color: var(--primary);
+  letter-spacing: .9px;
+  font-weight: 600;
+}
+.img-text h5 {
+  font-size: 15px;
+  padding-top: 8px;
+  text-transform: uppercase !important;
+}
+
+
+
 /* === MEDIA QUERY === */
 @media (max-width: 768px) {
   /* hero */
