@@ -210,6 +210,48 @@ a:hover {
   text-transform: uppercase !important;
 }
 
+/* === SERVICE PAGE === */
+.s-wrapper {
+  border: 1px dotted var(--primary);
+  padding: 10px;
+}
+
+.s-wrapper .s-icon {
+  height: 70px;
+  width: 70px;
+  margin: 10px 0;
+  color: var(--primary);
+}
+
+.s-wrapper h3 {
+  font-size: 23px;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
+.s-wrapper:hover {
+  background: var(--primary);
+  color: #fff;
+  transition: all 0.3s;
+}
+
+
+.s-wrapper:hover .s-icon, .s-wrapper:hover p {
+  color: #fff !important;
+}
+
+/* === CONTACT PAGE === */
+.icon-wrap {
+  background: var(--primary);
+  height: 40px;
+  width: 40px;
+  color: #fff;
+}
+
+.icon-wrap span {
+  font-weight: 500;
+}
+
 
 
 /* === MEDIA QUERY === */
