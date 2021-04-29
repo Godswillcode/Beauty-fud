@@ -28,6 +28,10 @@ a:hover {
   color: var(--primary) !important;
 }
 
+textarea {
+  resize: none !important;
+}
+
 /*== Banner ==*/
 .banner {
   height: 50vh;
@@ -120,7 +124,31 @@ a:hover {
   border: 2px solid var(--primary);
 }
 
+/* === MENU PAGE ===/*
 
+
+
+/* Add padding BETWEEN each column */
+
+.column1 {
+  float: left;
+  display: none;
+}
+
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+.show {
+  display: block;
+}
+
+.btn.active {
+  background-color: transparent !important;
+  color: var(--primary) !important;
+  border: 1px solid var(--primary) !important;
+}
 
 /* === Expert PAGE === */
 .team-area {
@@ -131,9 +159,10 @@ a:hover {
   margin-bottom: 10px;
 }
 
-.single-team:hover{
+.single-team:hover {
   background: #fff;
-  box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
 .single-team:hover .social {
@@ -188,7 +217,7 @@ a:hover {
   line-height: 40px;
   text-align: center !important;
 }
-.img-area .social ul li{
+.img-area .social ul li {
   padding-left: 5px !important;
 }
 .img-area .social ul li a:hover {
@@ -201,7 +230,7 @@ a:hover {
 .img-text h4 {
   font-size: 19px;
   color: var(--primary);
-  letter-spacing: .9px;
+  letter-spacing: 0.9px;
   font-weight: 600;
 }
 .img-text h5 {
@@ -235,9 +264,20 @@ a:hover {
   transition: all 0.3s;
 }
 
-
-.s-wrapper:hover .s-icon, .s-wrapper:hover p {
+.s-wrapper:hover .s-icon,
+.s-wrapper:hover p {
   color: #fff !important;
+}
+
+/* === ORDER PAGE === */
+.form-wrapper {
+  background: var(--primary);
+  max-width: 560px;
+  padding: 25px 0;
+}
+
+.form-wrapper form {
+  width: 90%;
 }
 
 /* === CONTACT PAGE === */
@@ -251,8 +291,6 @@ a:hover {
 .icon-wrap span {
   font-weight: 500;
 }
-
-
 
 /* === MEDIA QUERY === */
 @media (max-width: 768px) {

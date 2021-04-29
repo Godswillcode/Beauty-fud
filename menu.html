@@ -15,6 +15,14 @@
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
       crossorigin="anonymous"
     />
+
+    <style>
+      /* h1 {
+  font-size: 50px;
+  word-break: break-all;
+} */
+ 
+    </style>
   </head>
   <body>
     <!-- Navbar -->
@@ -87,8 +95,91 @@
       </div>
     </header>
 
-   <div style="margin-top: 5em; margin-bottom: 5em;"></div>
+ <div class="container my-5">
+       <div class="d-flex justify-content-center mb-3">
+           
+<div id="myBtnContainer">
+  <button class="btn my-btn active" onclick="filterSelection('all')"> show all</button>
+  <button class="btn my-btn" onclick="filterSelection('nature')"> Nature</button>
+  <button class="btn my-btn" onclick="filterSelection('cars')"> Cars</button>
+  <button class="btn my-btn" onclick="filterSelection('people')"> People</button>
+</div>
+       </div>
 
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="col-lg-4 column1 nature">
+    <div class="content">
+      <img src="./assets/images/img-01.jpg" alt="Mountains" style="width:100%">
+      <h4>Mountains</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="col-lg-4 column1 nature">
+    <div class="content">
+    <img src="./assets/images/img-02.jpg" alt="Lights" style="width:100%">
+      <h4>Lights</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="col-lg-4 column1 nature">
+    <div class="content">
+    <img src="./assets/images/img-03.jpg" alt="Nature" style="width:100%">
+      <h4>Forest</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  
+  <div class="col-lg-4 column1 cars">
+    <div class="content">
+      <img src="./assets/images/img-04.jpg" alt="Car" style="width:100%">
+      <h4>Retro</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="col-lg-4 column1 cars">
+    <div class="content">
+    <img src="./assets/images/img-05.jpg" alt="Car" style="width:100%">
+      <h4>Fast</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="col-lg-4 column1 cars">
+    <div class="content">
+    <img src="./assets/images/img-02.jpg" alt="Car" style="width:100%">
+      <h4>Classic</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <div class="col-lg-4 column1 people">
+    <div class="content">
+      <img src="./assets/images/img-02.jpg" alt="Car" style="width:100%">
+      <h4>Girl</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="col-lg-4 column1 people">
+    <div class="content">
+    <img src="./assets/images/img-02.jpg" alt="Car" style="width:100%">
+      <h4>Man</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="col-lg-4 column1 people">
+    <div class="content">
+    <img src="./assets/images/img-02.jpg" alt="Car" style="width:100%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+ </div>
     <!-- Footer -->
     <footer class="bg-dark text-white pt-5 pb-3">
       <div class="container">
